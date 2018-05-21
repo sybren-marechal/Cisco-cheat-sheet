@@ -1,6 +1,7 @@
 # Table of contents
 
 * Initial page
-* Switch
-* Ip addressing
+* [Ip addressing](untitled.md)
+* [Switch](switch.md)
+* router
 
