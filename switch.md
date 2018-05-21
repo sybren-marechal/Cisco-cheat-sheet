@@ -26,13 +26,11 @@ login
 exit
 ```
 
-{% hint style="warning" %}
-Password: admin
-{% endhint %}
+> Password: admin
 
-> show running config
+`show running config`
 
-## Toekennen ip address 
+## Configure ip address 
 
 ```text
 Configure terminal
@@ -44,6 +42,28 @@ exit
 ```
 
 ## Assaning Vlan
+
+```text
+Configure terminal
+vlan 10
+name Students
+vlan 20
+name Faculty
+interface g0/2
+switchport mode trunk 
+switchport trunk native vlan 99
+interface g0/1
+switchport mode trunk
+interface f0/1
+switchport mode access
+switchport access vlan 20
+```
+
+> vlan 99 = administarters vlan  
+> native vlan wordt toegekend op drukste vlan, dit om CPU kracht te besparen.
+
+> Switchport mode **trunk** wordt gebruikt van **switch** naar **switch**  
+> Switchport mode **acces** wordt gebruikt van **switch** naar **pc**
 
 
 

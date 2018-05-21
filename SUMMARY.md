@@ -3,5 +3,5 @@
 * Initial page
 * [Ip addressing](untitled.md)
 * [Switch](switch.md)
-* router
+* [router](router.md)
 
