@@ -102,9 +102,11 @@ spanning-tree bpduguard enable
 
 > show spanning-tree
 
-## Configure PAgP
+## Configuring EtherChannel
 
 ![](.gitbook/assets/screen-shot-2018-05-22-at-21.33.45.png)
+
+### Configure PAgP
 
 on S1
 
@@ -122,15 +124,20 @@ channel-group 1 mode auto
 no shutdown
 ```
 
+> show etherchannel summary
+
 configure trunk ports on both switches
 
 ```text
 interface port-channel 1
-S1(config-if)# switchport mode trunk
-S1(config-if)# switchport trunk native vlan 99
+switchport mode trunk
+switchport trunk native vlan 99
+no shutdown
 ```
 
-> show etherchannel summary
+### configure LACP
+
+
 
 ## Convigure VTP
 
