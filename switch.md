@@ -49,6 +49,11 @@ vlan 10
 name Students
 vlan 20
 name Faculty
+```
+
+### trunk or acces
+
+```text
 interface g0/2
 switchport mode trunk 
 switchport trunk native vlan 99
@@ -64,6 +69,40 @@ switchport access vlan 20
 
 > Switchport mode **trunk** wordt gebruikt van **switch** naar **switch**  
 > Switchport mode **acces** wordt gebruikt van **switch** naar **pc**
+
+Use the **`show vlan brief`** command on all switches to verify that all VLANs are registered in the VLAN table and that the correct ports are assigned.  
+Use the **`show interfaces trunk`** command on all switches to verify trunk interfaces.  
+Use the **`show running-config`** command on all switches to verify all other configurations.
+
+## CCNA 3
+
+## Convigure VTP
+
+All the switches will be configured to use VTP for VLAN updates. S2 will be configured as the server.Switches S1 and S3 will be configure as clients. They will be in the CCNA VTP domain using the password **admin**.
+
+on the administrator
+
+```text
+Configure terminal
+vtp domain CCNA
+vtp mode server
+vtp password admin
+```
+
+on the clients
+
+```text
+Configure terminal
+vtp domain CCNA
+vtp mode client
+vtp password admin
+```
+
+> Verify VTP configurations by entering the `show vtp status` command on all switches.
+
+## Configure DTP
+
+dynamic trunk protocol. Anter following code on 
 
 
 
