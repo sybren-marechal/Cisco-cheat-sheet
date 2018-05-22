@@ -33,6 +33,8 @@ exit
 ```
 
 > Shutdown or no shutdown disabeld or enabelde the port
+>
+> show ip interface brief
 
 ### interfaces
 
