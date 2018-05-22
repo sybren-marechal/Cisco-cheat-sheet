@@ -137,7 +137,29 @@ no shutdown
 
 ### configure LACP
 
+on s1
 
+```text
+interface range f0/1-2
+switchport mode trunk
+switchport trunk native vlan 99
+channel-group 2 mode active
+no shutdown
+```
+
+on S2
+
+```text
+interface range f0/1-2
+switchport mode trunk
+switchport trunk native vlan 99
+channel-group 2 mode passive
+no shutdown
+```
+
+{% hint style="info" %}
+geindigt op 4.2.1.4
+{% endhint %}
 
 ## Convigure VTP
 
