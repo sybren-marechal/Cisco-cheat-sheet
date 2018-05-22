@@ -76,6 +76,62 @@ Use the **`show running-config`** command on all switches to verify all other co
 
 ## CCNA 3
 
+## spanning tree
+
+root switch
+
+```text
+spanning-tree vlan 1,10,99 root primary
+spanning-tree mode rapid-pvst
+```
+
+secondary switch
+
+```text
+spanning-tree vlan 1,10,99 root secondary
+spanning-tree mode rapid-pvst
+```
+
+op een interface gekoppeld aan pc
+
+```text
+interface <interface>
+spanning-tree portfast
+spanning-tree bpduguard enable
+```
+
+> show spanning-tree
+
+## Configure PAgP
+
+![](.gitbook/assets/screen-shot-2018-05-22-at-21.33.45.png)
+
+on S1
+
+```text
+interface range f0/3-4`
+channel-group 1 mode desirable
+no shutdown
+```
+
+On S3
+
+```text
+interface range f0/3-4`
+channel-group 1 mode auto
+no shutdown
+```
+
+configure trunk ports on both switches
+
+```text
+interface port-channel 1
+S1(config-if)# switchport mode trunk
+S1(config-if)# switchport trunk native vlan 99
+```
+
+> show etherchannel summary
+
 ## Convigure VTP
 
 All the switches will be configured to use VTP for VLAN updates. S2 will be configured as the server.Switches S1 and S3 will be configure as clients. They will be in the CCNA VTP domain using the password **admin**.
