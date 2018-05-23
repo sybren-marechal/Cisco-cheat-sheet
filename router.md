@@ -156,3 +156,44 @@ exit
 
 ![](.gitbook/assets/screen-shot-2018-05-21-at-18.18.58%20%281%29.png)
 
+## CCNA3
+
+## HSRP protocol
+
+Hot Standby Router Protocol
+
+![](.gitbook/assets/screen-shot-2018-05-23-at-20.30.55.png)
+
+![](.gitbook/assets/screen-shot-2018-05-23-at-20.37.33.png)
+
+In this step, you will configure HSRP and change the default gateway address on PC-A, PC-C, S1, and S2 to the virtual IP address for HSRP. R1 becomes the active router via configuration of the HSRP priority command.
+
+c. Verify HSRP by issuing the show standby command on R1
+
+```text
+interface g0/1
+standby version 2
+standby 1 ip 192.168.1.254
+standby 1 priority 150
+standby 1 preempt
+
+```
+
+R3
+
+```text
+interface g0/1
+standby version 2
+standby 1 ip 192.168.1.254
+```
+
+![](.gitbook/assets/screen-shot-2018-05-23-at-20.44.19.png)
+
+the virutal ip addres is an ip addres that inlcude all the ip address that are yoused. Mostley its broadcast -1
+
+> show standby
+>
+> show standby brief
+
+
+
