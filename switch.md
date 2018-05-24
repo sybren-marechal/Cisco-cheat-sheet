@@ -187,11 +187,5 @@ channel-group 2 mode passive
 no shutdown
 ```
 
-## EIGRP
-
-![](.gitbook/assets/screen-shot-2018-05-23-at-22.36.26.png)
-
 ## 
-
-
 
