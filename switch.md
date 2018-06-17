@@ -122,15 +122,17 @@ spanning-tree vlan 1,10,99 root secondary
 spanning-tree mode rapid-pvst
 ```
 
-op een interface gekoppeld aan pc
+secure laptoppoorten
 
 ```text
-interface <interface>
+interface <interface voor pc>
 spanning-tree portfast
 spanning-tree bpduguard enable
 ```
 
 > show spanning-tree
+
+
 
 ## Configuring EtherChannel
 

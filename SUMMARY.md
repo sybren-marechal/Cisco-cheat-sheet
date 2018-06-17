@@ -1,6 +1,6 @@
 # Table of contents
 
-* Initial page
+* [Initial page](README.md)
 * [Ip addressing](untitled.md)
 * [Switch](switch.md)
 * [router](router.md)
