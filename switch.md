@@ -109,6 +109,8 @@ H1
 
 ## spanning tree
 
+Het **Spanning Tree** Protocol \(STP - IEEE 802.1D\) wordt gebruikt om redundantie van paden in een netwerktopologie te beheersen. Om netwerken sneller en robuuster te maken worden verbindingen vaak redundant uitgevoerd. Omdat dit kan leiden tot dubbele pakketten wordt het STP gebruikt.
+
 root switch
 
 ```text
@@ -131,7 +133,11 @@ spanning-tree portfast
 spanning-tree bpduguard enable
 ```
 
+> bpduguard enable wordt gebruikt voor het beveiligen voor laptoppoorten
+
 > show spanning-tree
+>
+> %Warning: portfast should only be enabled on ports connected to a single host. Connecting hubs, concentrators, switches, bridges, etc... to this interface when portfast is enabled, can cause temporary bridging loops. Use with CAUTION
 
 
 
@@ -174,9 +180,7 @@ on s1
 
 ```text
 interface range f0/1-2
-switchport mode trunk
-switchport trunk native vlan 99
-channel-group 2 mode active
+channel-group 1 mode active
 no shutdown
 ```
 
@@ -184,11 +188,13 @@ on S2
 
 ```text
 interface range f0/1-2
-switchport mode trunk
-switchport trunk native vlan 99
-channel-group 2 mode passive
+channel-group 1 mode active
 no shutdown
 ```
+
+> show etherchannel
+>
+> show etherchannel summery
 
 ## 
 
