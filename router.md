@@ -253,7 +253,7 @@ passive-interface g0/0
 
 > show ip protocols
 
-## OSPFv2
+## OSPF
 
 Open Shortest Path First \(OSPF\) is a link-state routing protocol for IP networks
 
@@ -291,7 +291,32 @@ R1
 Router ospf 1
 network 192.168.1.0 0.0.0.255 area 0
 network 192.168.0.0 0.0.0.3 area 0
+network 10.0.0.0 0.255.255.255 area 10
+
+passive-interface G0/1
+```
+
+> door int G0/1 passive te zetten zal 3.3.3.3 niet als neigbour verschijnen
+
+R2
+
+```text
+Router ospf 1
+network 192.168.0.0 0.0.0.3 area 0
+network 192.168.0.4 0.0.0.3 area 0
+
+default-information originate
+exit
 ip route 0.0.0.0 0.0.0.0 Loopback 0
+```
+
+R3
+
+```text
+Router ospf 1
+network 192.168.1.0 0.0.0.255 area 0
+network 192.168.0.4 0.0.0.3 area 0
+network 172.16.0.0 0.0.255.255.255 area 20
 ```
 
 > network kies je het grootste ip address in gebruik bv 10.0.0.0  
@@ -309,7 +334,40 @@ ip route 0.0.0.0 0.0.0.0 Loopback 0
 >
 > For a more detailed list of every OSPF-enabled interface, issue the `show ip ospf interface` command.
 
-### 
+## multi-area OSPF
+
+R1
+
+```text
+Router ospf 1
+network 10.0.0.0 0.255.255.255 area 10
+area 10 range 10.0.0.0 255.0.0.0 
+```
+
+R3
+
+```text
+Router ospf 1
+network 172.16.0.0 0.0.255.255.255 area 20
+area 20 range 172.16.0.0 255.255.0.0
+```
+
+## Authentication
+
+op iedere interface
+
+```text
+Interface serial0/0/0
+ip ospf authentication meddage-digest
+ip ospf message-digest-key 1 md5 cisco
+```
+
+## banbreedte, mo da mag wel nie van cordemans.
+
+```text
+interface s0/0/0
+bandwith 128
+```
 
 ## Configure OSPF passive interfaces
 
