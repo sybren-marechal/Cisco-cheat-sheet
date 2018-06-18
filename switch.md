@@ -37,8 +37,9 @@ Configure terminal
 interface vlan <number Vlan>
 ip address <ip addres> <subnet>
 no shutdown
-ip default-gateway <default-gateway>
 exit
+ip default-gateway <default-gateway>
+end
 ```
 
 ## Assaning Vlan
