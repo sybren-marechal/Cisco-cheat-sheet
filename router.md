@@ -377,5 +377,44 @@ passive-interface g0/0
 
 ```
 
+## CCNA 4 
 
+## Extended ACLs
+
+Configure the ACL on R1. Use 100 for the ACL number.
+
+```text
+R1(config)# access-list 100 remark Allow Web & SSH Access
+R1(config)# access-list 100 permit tcp host 192.168.10.3 host 10.2.2.1 eq 22
+R1(config)# access-list 100 permit tcp any any eq 80
+```
+
+Apply ACL 100 to the S0/0/0 interface.
+
+```text
+R1(config)# interface s0/0/0 
+R1(config-if)# ip access-group 100 out
+
+```
+
+### troubleshooting
+
+```text
+show access-lists [<number> | <name>]
+show ip access-lists [<number> | <name>]
+show ip access-lists interface <interface>
+show ip access-lists dynamic
+show ip interface [<interface>]
+show time-range [<name>]
+```
+
+Configure the policy on R3. Name the ACL WEB-POLICY.
+
+```text
+R3(config)# ip access-list extended WEB-POLICY
+R3(config-ext-nacl)# permit tcp 192.168.30.0 0.0.0.255 host 10.1.1.1 eq 80
+R3(config-ext-nacl)# permit tcp 192.168.30.0 0.0.0.255 209.165.200.224 0.0.0.31 eq 80
+```
+
+[http://packetlife.net/media/library/14/IOS\_IPv4\_Access\_Lists.pdf](http://packetlife.net/media/library/14/IOS_IPv4_Access_Lists.pdf)
 

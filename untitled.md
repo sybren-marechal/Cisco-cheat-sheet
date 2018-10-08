@@ -3,7 +3,7 @@
 example of a adressing table
 
 | **Device** | **Interface** | **Ip Address** | **Subnet Mask** | **Default Gateway** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- | :--- |
 | **R1** | G0/0 | No shut |   |   |
 |  **** | G0/0.10 studenen | 10.0.3.254 | 255.225.252.0 |   |
 |  **** | G0/0.20 docenten | 10.0.4.254 | 255.225.255.0 |   |
