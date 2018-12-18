@@ -4,15 +4,15 @@
 [https://community.cisco.com/t5/networking-documents/how-to-configure-a-gre-tunnel/ta-p/3131970](https://community.cisco.com/t5/networking-documents/how-to-configure-a-gre-tunnel/ta-p/3131970)
 {% endhint %}
 
-![](.gitbook/assets/screenshot-2018-12-18-at-20.27.35.png)
+![](../.gitbook/assets/screenshot-2018-12-18-at-20.27.35.png)
 
 Tunneling provides a mechanism to transport packets of one protocol within another protocol. The protocol that is carried is called as the passenger protocol, and the protocol that is used for carrying the passenger protocol is called as the transport protocol. Generic Routing Encapsulation \(GRE\) is one of the available tunneling mechanisms which uses IP as the transport protocol and can be used for carrying many different passenger protocols. The tunnels behave as virtual point-to-point links that have two endpoints identified by the tunnel source and tunnel destination addresses at each endpoint.
 
 The below diagram shows encapsulation process of GRE packet as it traversers the router and enters the tunnel interface:
 
-![](.gitbook/assets/137281-gre1.jpg)
+![](../.gitbook/assets/137281-gre1.jpg)
 
-![](.gitbook/assets/137288-gre2.jpg)
+![](../.gitbook/assets/137288-gre2.jpg)
 
 ### Configure default routes to the ISP router.
 

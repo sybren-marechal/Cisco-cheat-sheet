@@ -21,5 +21,5 @@
   * [OSPF](router/ospf.md)
   * [ACL](router/acl.md)
   * [PPP](router/ppp.md)
-* [Point-to-Point GRE VPN Tunnel](point-to-point-gre-vpn-tunnel.md)
+  * [Point-to-Point GRE VPN Tunnel](router/point-to-point-gre-vpn-tunnel.md)
 
