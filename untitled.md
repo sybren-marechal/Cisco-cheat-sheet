@@ -28,7 +28,7 @@ Ip addres van G0/0.10 is default gateway van vlan studenten
 
 ## Ip adressen berekenen.
 
-{% embed data="{\"url\":\"http://www.subnet-calculator.com\",\"type\":\"link\",\"title\":\"Online IP Subnet Calculator\",\"icon\":{\"type\":\"icon\",\"url\":\"http://www.subnet-calculator.com/favicon.ico\",\"aspectRatio\":0}}" %}
+{% embed url="http://www.subnet-calculator.com" %}
 
 {% hint style="info" %}
 ip adresses worden gerangschikt van **groot** naar **klein**

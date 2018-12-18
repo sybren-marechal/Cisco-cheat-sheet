@@ -79,7 +79,7 @@ redistribute static
 default-information originate
 ```
 
-![](.gitbook/assets/screen-shot-2018-05-21-at-18.18.58.png)
+![](../.gitbook/assets/screen-shot-2018-05-21-at-18.18.58.png)
 
 ## DHCP protocol
 
@@ -154,7 +154,7 @@ exit
 
 **`show ip nat translations`**
 
-![](.gitbook/assets/screen-shot-2018-05-21-at-18.18.58%20%281%29.png)
+![](../.gitbook/assets/screen-shot-2018-05-21-at-18.18.58%20%281%29.png)
 
 ## CCNA3
 
@@ -162,7 +162,7 @@ exit
 
 Hot Standby Router Protocol
 
-![](.gitbook/assets/screen-shot-2018-05-23-at-20.37.33.png)
+![](../.gitbook/assets/screen-shot-2018-05-23-at-20.37.33.png)
 
 In this step, you will configure HSRP and change the default gateway address on PC-A, PC-C, S1, and S2 to the virtual IP address for HSRP. R1 becomes the active router via configuration of the HSRP priority command.
 
@@ -193,13 +193,13 @@ standby 1 ip <virtual ip>
 
 ## EIGRP
 
-![](.gitbook/assets/screen-shot-2018-05-23-at-22.36.26.png)
+![](../.gitbook/assets/screen-shot-2018-05-23-at-22.36.26.png)
 
 The routers should be able to ping one another, and each PC should be able to ping its default gateway. The PCs will **not** be able to ping other PCs until EIGRP routing is configured. Verify and troubleshoot if necessary.
 
 Advertise the directly connected networks on R1 using the wildcard mask.
 
-![](.gitbook/assets/screen-shot-2018-05-24-at-10.35.15.png)
+![](../.gitbook/assets/screen-shot-2018-05-24-at-10.35.15.png)
 
 ```text
 router eigrp 10
@@ -283,7 +283,7 @@ yes
 
 ### Configure and verify OSPF Routing
 
-![](.gitbook/assets/screen-shot-2018-06-18-at-11.57.02.png)
+![](../.gitbook/assets/screen-shot-2018-06-18-at-11.57.02.png)
 
 R1
 
