@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [Cisco Sheat Sheet](README.md)
 * [Ip addressing](untitled.md)
 * [Switch](switch/README.md)
   * [Basic settings](switch/basic-settings.md)
