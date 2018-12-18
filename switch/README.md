@@ -143,7 +143,7 @@ spanning-tree bpduguard enable
 
 ## Configuring EtherChannel
 
-![](.gitbook/assets/screen-shot-2018-05-22-at-21.33.45.png)
+![](../.gitbook/assets/screen-shot-2018-05-22-at-21.33.45.png)
 
 ### Configure PAgP
 
