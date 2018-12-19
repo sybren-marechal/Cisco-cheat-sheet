@@ -1,10 +1,3 @@
----
-description: >-
-  Network Address Translation (NAT) allows a host that does not have a
-  registered IP address to communicate with other hosts on the Internet. NAT has
-  gained such wide-spread acceptance that the majority
----
-
 # NAT
 
 > [http://packetlife.net/media/library/32/NAT.pdf](http://packetlife.net/media/library/32/NAT.pdf)

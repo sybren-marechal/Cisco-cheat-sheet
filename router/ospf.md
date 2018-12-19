@@ -1,9 +1,3 @@
----
-description: >-
-  Open Shortest Path First (OSPF) is a link-state routing protocol for IP
-  networks
----
-
 # OSPF
 
 ### change router ID assignments

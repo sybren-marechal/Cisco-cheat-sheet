@@ -1,7 +1,3 @@
----
-description: Basic Setup of a router
----
-
 # Basic Settings
 
 ## configure basis settings

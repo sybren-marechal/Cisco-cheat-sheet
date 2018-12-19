@@ -1,10 +1,3 @@
----
-description: >-
-  RIP of Routing Information Protocol is een open netwerkprotocol waarmee
-  routers aan elkaar doorgeven welke routes voorhanden zijn om IP-informatie
-  naar zijn bestemming te sluizen. Het is een distance-
----
-
 # Rip Protocol
 
 ## RIP protocol

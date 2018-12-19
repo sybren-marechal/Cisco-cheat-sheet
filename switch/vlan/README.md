@@ -33,3 +33,18 @@ switchport access vlan 20
 
 Use the **`show vlan brief`** command on all switches to verify that all VLANs are registered in the VLAN table and that the correct ports are assigned. Use the **`show interfaces trunk`** command on all switches to verify trunk interfaces. Use the **`show running-config`** command on all switches to verify all other configurations.
 
+## Delete vlans
+
+```text
+delete vlan.dat
+reload
+```
+
+## Troubleshooting
+
+```text
+show vlan
+show vlan brief
+show interfaces trunk
+```
+

@@ -1,10 +1,3 @@
----
-description: >-
-  Dynamic Host Configuration Protocol (DHCP) is een computerprotocol dat
-  beschrijft hoe een computer dynamisch zijn netwerkinstelling van een
-  DHCP-server kan verkrijgen. Het DHCP-protocol is gebaseerd o
----
-
 # DHCP
 
 ## DHCP
