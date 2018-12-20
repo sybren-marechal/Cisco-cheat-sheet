@@ -1,6 +1,6 @@
 # VLAN
 
-## encapsulation dot1Q
+## intencapsulation dot1Q
 
 This example shows how to enable dot1Q encapsulation on a subinterface for VLAN 30:
 
