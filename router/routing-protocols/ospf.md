@@ -26,7 +26,7 @@ yes
 
 ### Configure and verify OSPF Routing
 
-![](../.gitbook/assets/screen-shot-2018-06-18-at-11.57.02.png)
+![](../../.gitbook/assets/screen-shot-2018-06-18-at-11.57.02.png)
 
 R1
 

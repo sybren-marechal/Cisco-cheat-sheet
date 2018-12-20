@@ -22,5 +22,5 @@ vtp mode client
 vtp password admin
 ```
 
-> Verify VTP configurations by entering the `show vtp status` command on all switches.
+> Verify VTP configurations by entering the `show vtp status` command on all switches
 

@@ -25,7 +25,7 @@ default-information originate
 
 
 
-![](../.gitbook/assets/screen-shot-2018-05-21-at-18.18.58.png)
+![](../../.gitbook/assets/screen-shot-2018-05-21-at-18.18.58.png)
 
 
 
