@@ -1,5 +1,7 @@
 # NAT
 
+
+
 > [http://packetlife.net/media/library/32/NAT.pdf](http://packetlife.net/media/library/32/NAT.pdf)
 
 ![](../.gitbook/assets/110-2.jpg)
@@ -32,6 +34,17 @@ exit
 
 **`show ip nat translations`**
 
+## Dynamic translation with interface overloading
+
+```text
+access-list 3 permit 172.16.0.0 0.0.3.255
+ip nat inside source list 3 interface s0/0/0 overload
+
+
+access-list 3 permit 192.168.0.0 0.0.0.31
+ip nat inside source list 3 interface s0/0/1 overload
+```
+
 ## Troubleshooting
 
 ```text
@@ -39,4 +52,6 @@ show ip nat translations [verbose]
 show ip nat statistics
 clear ip nat translations
 ```
+
+
 

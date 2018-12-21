@@ -4,27 +4,35 @@
 
 ![](../.gitbook/assets/screenshot-2018-12-18-at-19.58.14.png)
 
-op beide routers
+## Debuggin info
 
 ```text
+debug ppp authentication
+debug ppp negotation
+debug ppp packet
+unbug all
+```
+
+Main
+
+```text
+username ISP password admin
 interface s0/0/0
 encapsulation ppp
-debug ppp negotiation
-debug ppp packet
-encapsulation ppp
+ppp authentication chap
 end
-username Branch3 password cisco
+
 
 ```
 
+ISP
+
 ```text
-configure terminal
-username Branch3 password cisco
-end
-debug ppp negotiation
-configure terminal
-interface s0/0/1
+username MAIN password admin
+interface s0/0/0
+encapsulation ppp
 ppp authentication chap
+end
 
 ```
 
@@ -32,6 +40,7 @@ ppp authentication chap
 
 ```text
 show interfaces s0/0/0
+    => Encapsulation PPP, loopback not set, keepalive set (10 sec)
 debug ppp packet
 debug ppp negotiation
 ```
