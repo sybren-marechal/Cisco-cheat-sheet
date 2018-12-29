@@ -1,7 +1,5 @@
 # NAT
 
-
-
 > [http://packetlife.net/media/library/32/NAT.pdf](http://packetlife.net/media/library/32/NAT.pdf)
 
 ![](../.gitbook/assets/110-2.jpg)
@@ -14,35 +12,13 @@ Network Address Translation
 Configure terminal
 access-list 1 permit 10.0.0.0 0.0.3.255
 access-list 1 permit 10.0.4.0 0.0.0.255
-access-list 1 permit 10.0.5.0 0.0.0.31
-ip nat pool publicAcces 18.0.0.1 18.0.0.1 netmask 255.0.0.0
+ip nat pool publicAcces 1.1.1.2 1.1.1.2 netmask 255.255.255.252 //netwerk op buiten interface
 ip nat inside source list 1 pool publicAcces overload
 interface g0/0
-ip nat outside
-interface serial0/0/0
 ip nat inside
+interface serial0/0/0
+ip nat outside
 exit
-interface serial0/0/1
-ip nat inside 
-exit
-```
-
-> add your ip netten with their wildcard to the accaslist.  
-> configure your public adres with there subnet.
->
-> `publicAcces` is a variable
-
-**`show ip nat translations`**
-
-## Dynamic translation with interface overloading
-
-```text
-access-list 3 permit 172.16.0.0 0.0.3.255
-ip nat inside source list 3 interface s0/0/0 overload
-
-
-access-list 3 permit 192.168.0.0 0.0.0.31
-ip nat inside source list 3 interface s0/0/1 overload
 ```
 
 ## Troubleshooting

@@ -10,7 +10,7 @@
 debug ppp authentication
 debug ppp negotation
 debug ppp packet
-unbug all
+undebug all
 ```
 
 Main
